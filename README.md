@@ -1,13 +1,6 @@
 [![Review Assignment Due Date](https://github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/58HShPQN)
-# Data Mining and Machine Learning Group Coursework
+# Data Mining and Machine Learning
 
-## Group Members
-
-1. Alex Varbanov @verbal-ale
-2. Diego Velasquez @Diego15457
-3. Alexandra Cures @ac234
-4. Saiprasad Murali @saiprasadm1998
-5. Sankalp Arora @sankalp-s
 
 ## Initial Project Proposal
 
