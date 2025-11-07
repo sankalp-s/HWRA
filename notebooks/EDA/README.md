@@ -44,4 +44,4 @@
    - Split the data into training and testing sets and evaluate model accuracy.
    - Perform cross-validation to assess the KNN classifier's performance with various k values (number of neighbors).
 
-The [EDA_Final.ipynb](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/EDA/EDA_Final.ipynb) offers a comprehensive analysis of a music dataset, covering data preparation, visualization, feature selection, and predictive modeling to provide insights into music popularity trends.
+The [EDA_Final.ipynb](https://github.com/sankalp-s/HWRA/blob/main/notebooks/EDA/EDA_Final.ipynb) offers a comprehensive analysis of a music dataset, covering data preparation, visualization, feature selection, and predictive modeling to provide insights into music popularity trends.
