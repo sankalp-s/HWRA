@@ -134,7 +134,7 @@ using the shared indentifiers:
 ```
 To acquire song popularity information, we started by making a list of all tracks contained in releases that have some popularity. We then individually initiated a [Spotify developer account](https://developer.spotify.com/) and utilized the [Spotipy](https://spotipy.readthedocs.io/en/2.22.1/) library to request and gather song popularity data. These diverse data sources were merged  to form our final, all-encompassing dataset.
 
-For more information see: [data integration](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/tree/main/notebooks/data%20integration).
+For more information see: [data integration](https://github.com/sankalp-s/HWRA/tree/main/notebooks/data%20integration).
 
 #### Key Features
 Here is a table of notable features and their descriptions:
@@ -240,13 +240,13 @@ These observations provide insights into the characteristics of the dataset's fe
 ### Data Analysis
 
 ### 1. EDA
-Code notebook: [EDA_final.ipnynb](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/EDA/Final_EDA.ipynb)
+Code notebook: [EDA_final.ipnynb](https://github.com/sankalp-s/HWRA/blob/main/notebooks/EDA/Final_EDA.ipynb)
 
 
-Detailed documentation: [EDA_readme](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/EDA/README.md)
+Detailed documentation: [EDA_readme](https://github.com/sankalp-s/HWRA/blob/main/notebooks/EDA/README.md)
 
 #### 1.1 Environment Setup and Data Import
-The environment is configured, and essential libraries for data analysis and visualization are imported. The dataset ["integrated_data.csv"](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/tree/main/data) is loaded which is the raw, unprocessed data compiled from various sources, which will undergo extensive data processing and analysis.
+The environment is configured, and essential libraries for data analysis and visualization are imported. The dataset ["integrated_data.csv"](https://github.com/sankalp-s/HWRA/tree/main/data) is loaded which is the raw, unprocessed data compiled from various sources, which will undergo extensive data processing and analysis.
 
 #### 1.2 Data Preprocessing
 The dataset is prepared through a series of steps:
@@ -285,7 +285,7 @@ Class imbalance is tackled through oversampling techniques: Random Oversampler a
 #### 1.9 Data Normalization
 Certain numerical features are normalized using standard scaling for consistent scaling.
 
-*_Note: For detailed documentation on how specific features are handled and the details of specific features, please refer to the following link: [Eda_readme](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/EDA/README.md)._
+*_Note: For detailed documentation on how specific features are handled and the details of specific features, please refer to the following link: [Eda_readme](https://github.com/sankalp-s/HWRA/blob/main/notebooks/EDA/README.md)._
 
 ---
 
@@ -299,7 +299,7 @@ These visualizations cover a wide range of aspects, including feature distributi
 In this section, we examine the distributions of various features from our dataset using distribution plots. Each subplot in the grid provides insights into the distribution characteristics of different features.
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/Distplots.png" alt="Distribution plots" width="850" height="750">
+  <img src="https://github.com/sankalp-s/HWRA/raw/main/assets/Distplots.png" alt="Distribution plots" width="850" height="750">
 </p>
 
 The key observations are as follows:
@@ -310,18 +310,18 @@ The key observations are as follows:
 - The loudness feature's distribution is centered around the mean, suggesting a relatively uniform spread.
 - Popularity scores follow a right-skewed distribution, with the majority of songs concentrated in the lower popularity range.
 
-The feature selection analysis in [EDA_Final.ipynb](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/EDA/Final_EDA.ipynb) utilized correlation-based matrices and tree-based models to identify key features
+The feature selection analysis in [EDA_Final.ipynb](https://github.com/sankalp-s/HWRA/blob/main/notebooks/EDA/Final_EDA.ipynb) utilized correlation-based matrices and tree-based models to identify key features
 
 Using heatmaps as a visualization tool.
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/assets/Heatmap.png" alt="Distribution plots" width="800" height="750">
+  <img src="https://github.com/sankalp-s/HWRA/blob/main/assets/Heatmap.png" alt="Distribution plots" width="800" height="750">
 </p>
 
 Using tree-based models to get the feature importance scores:
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/assets/Regressors.png" alt="Distribution plots" width="500" height="450">
+  <img src="https://github.com/sankalp-s/HWRA/blob/main/assets/Regressors.png" alt="Distribution plots" width="500" height="450">
 </p>
 
 In conclusion, these 4 features exert a substantial influence on a song's popularity:
@@ -334,22 +334,22 @@ To visualize the relationships between these key features and popularity, scatte
 
 | Acousticness vs Popularity   | Instrumentalness vs Popularity |
 | ---------------------------  | ------------------------------ |
-| ![Image 1](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/Acousticness.png) | ![Image 2](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/Instrumentalness.png) |
+| ![Image 1](https://github.com/sankalp-s/HWRA/raw/main/assets/Acousticness.png) | ![Image 2](https://github.com/sankalp-s/HWRA/raw/main/assets/Instrumentalness.png) |
 | Danceability vs Popularity   | Energy vs Popularity         |
-| ![Image 3](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/danceability.png) | ![Image 4](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/energy.png) |
+| ![Image 3](https://github.com/sankalp-s/HWRA/raw/main/assets/danceability.png) | ![Image 4](https://github.com/sankalp-s/HWRA/raw/main/assets/energy.png) |
 
 #### 2.2 Understanding target variable (popularity)
 
 The distribution of the 'popularity' feature, which serves as the target variable in our analysis, is visualized. This visualization is crucial for understanding the distribution of song popularity scores in the dataset, allowing us to assess central tendency measures like the mean and median and facilitating the identification of patterns and trends. These insights are considered valuable for subsequent data analysis and modeling tasks.
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/assets/Popularity_hist.png" alt="Distribution plots" width="800" height="450">
+  <img src="https://github.com/sankalp-s/HWRA/blob/main/assets/Popularity_hist.png" alt="Distribution plots" width="800" height="450">
 </p>
 
 To detect the potential outliers and extreme values in the 'popularity' feature box plot visualization are used.
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/assets/Popularity_box.png" alt="Distribution plots" width="800" height="450">
+  <img src="https://github.com/sankalp-s/HWRA/blob/main/assets/Popularity_box.png" alt="Distribution plots" width="800" height="450">
 </p>
 
 #### 2.3 Underlying patterns (Changes in mean popularity with years, average duration of songs, seasonal popularities)
@@ -359,13 +359,13 @@ In this section, an examination is conducted to unveil underlying patterns and i
 2.3.1 Mean Popularity by Year
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/assets/Mean_pop_year.png" alt="Distribution plots" width="800" height="450">
+  <img src="https://github.com/sankalp-s/HWRA/blob/main/assets/Mean_pop_year.png" alt="Distribution plots" width="800" height="450">
 </p>
 
 A more accurate representation of the data is achieved by considering variations in importance or significance among the data points when using the weighted mean.
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/assets/Weighted%20mean%20popularity.png" alt="Distribution plots" width="800" height="450">
+  <img src="https://github.com/sankalp-s/HWRA/blob/main/assets/Weighted%20mean%20popularity.png" alt="Distribution plots" width="800" height="450">
 </p>
 
 The observed exponential increase in the weighted popularity of songs after 2008 suggests a notable surge in the audience's interest, particularly in the realm of electronic music (since our dataset mostly comprises electronic music). This trend indicates an expanding fan base and heightened appreciation for electronic music genres since 2008.
@@ -373,7 +373,7 @@ The observed exponential increase in the weighted popularity of songs after 2008
 2.3.2 Average Duration by Year
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/assets/Average_duration.png" alt="Distribution plots" width="800" height="450">
+  <img src="https://github.com/sankalp-s/HWRA/blob/main/assets/Average_duration.png" alt="Distribution plots" width="800" height="450">
 </p>
 
 The graph depicting the average duration by year reveals a predominant range of 5 to 7.5 minutes for song durations. Furthermore, it illustrates a declining trend in average song durations over the years.
@@ -381,7 +381,7 @@ The graph depicting the average duration by year reveals a predominant range of 
 2.3.3 Mean Popularity by Seasons
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/assets/Popularity%20with%20seasons.png" alt="Distribution plots" width="600" height="500">
+  <img src="https://github.com/sankalp-s/HWRA/blob/main/assets/Popularity%20with%20seasons.png" alt="Distribution plots" width="600" height="500">
 </p>
 
 The visualization of mean popularity by seasons, including autumn, spring, summer, and winter, showcases subtle variations in popularity. Songs released in summer tend to have slightly higher mean popularity (5.42), while those in spring and autumn hover around similar popularity levels (5.26 and 5.23, respectively). This suggests that the season of release might have a minor influence on song popularity, with summer releases attracting a slightly larger audience.
@@ -389,7 +389,7 @@ The visualization of mean popularity by seasons, including autumn, spring, summe
 2.3.3 Relative frequencies
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/assets/Freq_dist.png" alt="Distribution plots" width="550" height="500">
+  <img src="https://github.com/sankalp-s/HWRA/blob/main/assets/Freq_dist.png" alt="Distribution plots" width="550" height="500">
 </p>
 
 In the analysis, an imbalanced relative frequency distribution of the 'popularity' categories was observed, with the 'low' popularity category being identified as the majority class, while the 'medium' and 'high' popularity categories were represented as the minority classes. Imbalanced datasets may result in model bias and reduced performance, as the predictions tend to be dominated by the majority class, while the minority classes receive less attention. To mitigate this issue and ensure that fair predictions can be made across all popularity categories, the Synthetic Minority Over-sampling Technique (SMOTE) was employed. SMOTE is systematically used to generate synthetic samples from the minority classes, thus creating a more balanced dataset. This approach allows performance improvement in the model and the reduction of bias when predicting popularity categories, ensuring that the 'medium' and 'high' categories receive the attention they deserve in our analysis."
@@ -406,7 +406,7 @@ Notebooks:
 
 [002_clustering_popularity_analysis](/002_clustering_popularity_analysis.ipynb)
 
-[knn_clustering](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/models/Clustering/knn_clustering.ipynb)
+[knn_clustering](https://github.com/sankalp-s/HWRA/blob/main/notebooks/models/Clustering/knn_clustering.ipynb)
 
 
 #### Experimental design
@@ -457,7 +457,7 @@ When considering the results of the clustering experiment one should keep in min
 
 Notebooks:
 
-[knn_clustering](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/models/Clustering/knn_clustering.ipynb)
+[knn_clustering](https://github.com/sankalp-s/HWRA/blob/main/notebooks/models/Clustering/knn_clustering.ipynb)
 
 We also tried our hands on K-Nearest Neighbours Clustering to try and predict the popularity category of thee tracks.
 
@@ -564,7 +564,7 @@ The clustering results provide valuable insights into the inherent structure of 
 
 ### Decision Trees
 Notebooks:
-[Model: Decision Tree Classifier](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/models/Decision%20Tree/Decision_Tree_Model.ipynb)
+[Model: Decision Tree Classifier](https://github.com/sankalp-s/HWRA/blob/main/notebooks/models/Decision%20Tree/Decision_Tree_Model.ipynb)
 
 
 #### Experimental design
@@ -576,14 +576,14 @@ The model of DecisionTree will be useful to classify the popularity of our datas
 2. **Feature Scaling**: It is important to scale the information of the dataset to improve the performance of the model. To perform this, it was applied the standard, min-max and robust scaler methods. Adittionally, it was also considered the original data without feature scaling just for compairing the impact on it. As, it can see the original dataset is unbalanced and it may provoke low values in metrics of recall and F1
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/Original_dataset.png"
+  <img src="https://github.com/sankalp-s/HWRA/raw/main/assets/Original_dataset.png"
 alt="Distribution plots" width="500" height="350">
 </p>
 
 3. **Decision Tree Model**: This dataset (Spotify's songs) has unbalanced classes due to there is a majority class ('Low') y two others minitority class ('Medium' and 'High'). So, to address the condition of the dataset, it has been applied the model DecisionTreeClassifier considering different approaches in order to find the best evaluator. As first step, it necessary to balance the dataset applying resample techniques such as, SMOTE, SMOTETomek (SMK) and RandomOverSampler (ROS). As it can appreciate in the imabe below, with the resampled dataset it is better to apply algorithms for classifying.
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/resampled_data.png"
+  <img src="https://github.com/sankalp-s/HWRA/raw/main/assets/resampled_data.png"
 alt="Distribution plots" width="500" height="350">
 </p>
  Finally, we have considered a **ensemble method** called **Random Forest** which is based on the multiple decision tree.
@@ -595,7 +595,7 @@ alt="Distribution plots" width="500" height="350">
 **1.** Feature scaling is important to improve the performance of the model; however, it has been demonstrated that there is no sensitive in DecisionTree model applying standardization method as their accuracy got in training dataset are almost similar with a gap of 2.1% (maximum gap) as much as test dataset. In the image below, for every resample technique (SMOTE, SMK and ROS) with different scaling methods there is hardly any gap in the accuracy among itself. Therefore, it allows to claim either unscaled the training dataset or with application, the results on the accuracy would be almost similar.
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/Feature_Scaling_Decision_Tree.png" alt="Distribution plots" width="800" height="350">
+  <img src="https://github.com/sankalp-s/HWRA/raw/main/assets/Feature_Scaling_Decision_Tree.png" alt="Distribution plots" width="800" height="350">
 </p>
 
 In this scenery, the RandomOverSample (ROS) technique provides the best accuracy; however, it tends to overfit the result of the dataset lacking of flexibility. Therefore, a model which provides better generalisation would be SMK; in other words, the selected resample technique is SMOTETomek with the method of Robust Scaler to improve the performance of the model.
@@ -605,7 +605,7 @@ Weight for Class ('Medium') : 29.77
 Weight for Class ('High') : 1101
 
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/DT_class_weight.png"
+  <img src="https://github.com/sankalp-s/HWRA/raw/main/assets/DT_class_weight.png"
 alt="Distribution plots" width="500" height="350">
 </p>
 
@@ -623,7 +623,7 @@ According to the image above, it appreciates that test error converges since max
 <details>
   <summary> *Confussion Matrix for Decision Tree modifying class_weights:</summary>
 <p align="center">
-  <img src="https://github.com/dmml-heriot-watt/group-coursework-machine-learners/raw/main/assets/Confusion Matrix _ DT_weight_class.png"
+  <img src="https://github.com/sankalp-s/HWRA/raw/main/assets/Confusion Matrix _ DT_weight_class.png"
 alt="Distribution plots" width="500" height="350">
 </p>
 
@@ -694,11 +694,11 @@ It is clear that DecisionTreeClassifier is a reliable model for applying in this
 
 Notebooks:
 
-[CNN](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/models/CNN/CNN.ipynb)
+[CNN](https://github.com/sankalp-s/HWRA/blob/main/notebooks/models/CNN/CNN.ipynb)
 
-[create images](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/models/CNN/create_images.ipynb)
+[create images](https://github.com/sankalp-s/HWRA/blob/main/notebooks/models/CNN/create_images.ipynb)
 
-[get preview url](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/blob/main/notebooks/models/CNN/get_preview_url.ipynb)
+[get preview url](https://github.com/sankalp-s/HWRA/blob/main/notebooks/models/CNN/get_preview_url.ipynb)
 
 #### Experimental design
 
@@ -730,7 +730,7 @@ Notebooks:
 
  Sample Spectrogram Images:
 
-![Untitled-3-2](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/assets/89276533/b8a082d8-2546-4d98-b906-bc320957bdd1)
+![Untitled-3-2](https://github.com/sankalp-s/HWRA/assets/89276533/b8a082d8-2546-4d98-b906-bc320957bdd1)
 
  In these samples, we can clearly identify the following aspects:
 
@@ -791,7 +791,7 @@ Notebooks:
  1. The test accuracy was 96.35%
  2. This confirmed the model's capability to classify song popularity based on spectrogram images.
 
-![Untitled-4-2](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/assets/89276533/484ceba1-8ba4-4785-9999-25269a13f5ed)
+![Untitled-4-2](https://github.com/sankalp-s/HWRA/assets/89276533/484ceba1-8ba4-4785-9999-25269a13f5ed)
 
 #### Discussion
 
