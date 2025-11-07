@@ -38,7 +38,7 @@ Notebooks:
 
  Sample Spectrogram Images:
 
-![Untitled-3-2](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/assets/89276533/b8a082d8-2546-4d98-b906-bc320957bdd1)
+![Untitled-3-2](https://github.com/sankalp-s/HWRA/assets/89276533/b8a082d8-2546-4d98-b906-bc320957bdd1)
 
  In these samples, we can clearly identify the following aspects:
 
@@ -99,7 +99,7 @@ Notebooks:
  1. The test accuracy was 96.35%
  2. This confirmed the model's capability to classify song popularity based on spectrogram images.
 
-![Untitled-4-2](https://github.com/dmml-heriot-watt/group-coursework-machine-learners/assets/89276533/484ceba1-8ba4-4785-9999-25269a13f5ed)
+![Untitled-4-2](https://github.com/sankalp-s/HWRA/assets/89276533/484ceba1-8ba4-4785-9999-25269a13f5ed)
 
 ### Discussion
 
